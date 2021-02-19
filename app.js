@@ -161,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('#score').innerText = score;
             }
         } else {
+            score += 3;
             alert("Game Finished. You scored --> " + score)
             cards[optionOneId].setAttribute('src', 'images/white.png');
             cards[optionTwoId].setAttribute('src', 'images/white.png');
