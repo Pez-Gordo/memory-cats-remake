@@ -25,11 +25,12 @@ img {
 }
 
 #resetButton {
+    margin-top: 20px;
     margin: 0px auto;
     align: center;
 }
 
-button {
-    margin: 0px auto;
-    align: center;
+.footer {
+    margin-top: 20px;
+    text-align: center;
 }
