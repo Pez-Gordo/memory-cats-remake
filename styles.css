@@ -1,10 +1,35 @@
+body {
+    background-color: pink;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
-    width: 400px;
+    height: 306px;
+    width: 408px;
+    border: 4px dotted pink;
+    border-radius: 15px;
 }
 
 #table {
     margin: 0px auto;
+}
+
+#scoreBoard {
+    text-align: center;
+}
+
+img {
+    border: 1px solid pink;
+    border-radius: 10px;;
+}
+
+#resetButton {
+    margin: 0px auto;
+    align: center;
+}
+
+button {
+    margin: 0px auto;
+    align: center;
 }

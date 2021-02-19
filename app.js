@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var cardsChosen = [];
     var cardsChosenId = [];
     var cardsWon = [];
+    var score = 0;
 
     //create the board
     function createBoard() {
@@ -77,14 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionOneId = cardsChosenId[0];
         const optionTwoId = cardsChosenId[1];
         if (cardsChosen[0] === cardsChosen[1]) {
-            alert('your found a match');
+            //alert('your found a match');
             cards[optionOneId].setAttribute('src', 'images/white.png');
             cards[optionTwoId].setAttribute('src', 'images/white.png');
             cardsWon.push(cardsChosen);
+            score += 3;
+            document.querySelector('#score').innerText = score;
+
         } else {
             cards[optionOneId].setAttribute('src', 'images/blank.png');
             cards[optionTwoId].setAttribute('src', 'images/blank.png');
-            alert('Sorry try again');
+            //alert('Sorry try again');
+            score--;
+            document.querySelector('#score').innerText = score;
         }
         cardsChosen = [];
         cardsChosenId = [];
