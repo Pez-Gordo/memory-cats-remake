@@ -5,14 +5,15 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 306px;
-    width: 408px;
+   /* height: 306px;*/
+    width: 715px; 
     border: 4px dotted pink;
     border-radius: 15px;
+    margin: 0px auto;
 }
 
 #table {
-    margin: 0px auto;
+    text-align: center;
 }
 
 #scoreBoard {
@@ -21,7 +22,10 @@ body {
 
 img {
     border: 1px solid pink;
-    border-radius: 10px;;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+
 }
 
 #resetButton {
